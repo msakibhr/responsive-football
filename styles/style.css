@@ -1,0 +1,278 @@
+/*********************\ 
+***********************
+ Mobile-first approach
+***********************
+\*********************/
+
+/*************\ 
+ Common styles
+\*************/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.default-button {
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+}
+
+/*************\ 
+ header styles
+\*************/
+
+header {
+    background-color: #2D25A0;
+    padding: 50px 15px;
+}
+
+.banner-text {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner-header {
+    margin-bottom: 25px;
+}
+
+.banner-header h1 {
+    color: white;
+    margin: 0;
+    font-size: 36px;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+/***********\ 
+ main styles
+\***********/
+
+/* players-gallery styles */
+
+.players-gallery {
+    padding: 50px 15px 25px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.player {
+    padding: 15px;
+    box-shadow: 10px 10px 40px lightgray;
+}
+
+.player-image img {
+    width: 100%;
+}
+
+.player-name {
+    font-weight: bold;
+    font-size: 28px;
+    color: #18191F;
+}
+
+.player-info {
+    color: #6C6C6C;
+}
+
+/* highlights styles */
+
+.highlights {
+    padding: 25px 15px 25px 15px;
+}
+
+.highlights-text {
+    margin-bottom: 50px;
+}
+
+.highlights-header {
+    margin-bottom: 25px;
+}
+
+.highlights-paragraph {
+    margin-bottom: 40px;
+    color: #6C6C6C;
+}
+
+.highlights-header h2 {
+    color: #0A0826;
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.highlights-image img {
+    width: 100%;
+}
+
+/* sponsors section style */
+
+.sponsors {
+    padding: 50px 15px 25px 15px;
+}
+
+.sponsors-header {
+    color: #0A0826;
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sponsors-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.single-sponsor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-sponsor img {
+    width: 100%;
+}
+
+/* apps section style */
+
+.apps {
+    padding: 50px 15px 50px 15px;
+}
+
+.apps-header {
+    color: #0A0826;
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.apps-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.single-app {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.single-app img {
+    width: 100%;
+}
+
+/*************\ 
+ footer styles
+\*************/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    width: 280px;
+    height: 175px;
+}
+
+/* footer logo styles */
+
+.logo img {
+    width: 100%;
+}
+
+/* social icon styles */
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-single {
+    margin: 0 10px 0 10px;
+    font-size: 32px;
+}
+
+.social-single a {
+    color: #969BAB;
+}
+
+/* copyright text styles */
+
+.copyright {
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+/*********************\ 
+***********************
+  Media query for tab
+***********************
+\*********************/
+
+@media (min-width: 688px) {
+    header {
+        padding: 100px 50px;
+    }
+    .players-gallery {
+        padding: 100px 50px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .highlights {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sponsors {
+        padding: 50px;
+    }
+    .apps {
+        padding: 50px;
+    }
+}
+
+/*********************\ 
+***********************
+   Media query for pc
+***********************
+\*********************/
+
+@media (min-width: 1280px) {
+    header {
+        padding: 200px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .players-gallery {
+        padding: 200px 150px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .highlights {
+        padding: 100px 200px;
+        ;
+    }
+    .sponsors {
+        padding: 100px 200px;
+    }
+    .apps {
+        padding: 100px 200px;
+    }
+    .footer-container {
+        width: 483.87px;
+        height: 213px;
+    }
+}
